@@ -3,16 +3,16 @@ int main()
 {
 	int a,b,c,d,e;
 	float g;
-	printf("The first value");
+	printf("\n The first value");
 	scanf("%d",&a);
-	printf("The second value");
+	printf("\n The second value");
 	scanf("%d",&b);
-	printf("The third value");
+	printf("\n The third value");
 	scanf("%d",&c);
-	printf("The fourth value");
+	printf("\n The fourth value");
 	scanf("%d",&d);
 	e=a+b+c+d;
 	g=e/4.0;
-	printf("The Avarage of the numbers  %f",g);
+	printf("\n The Avarage of the numbers  %f",g);
 	return 0;
 }
