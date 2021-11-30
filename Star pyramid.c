@@ -1,9 +1,9 @@
-#include<stdio.h>
+ #include<stdio.h>
 
 int main()
 {
 	int TotalRow,row,space,star;
-	printf("Enter total row number");
+	printf("Enter total row number ");
 	scanf("%d",&TotalRow);
 	for(row = 1; row <= TotalRow;row++)
 	{
