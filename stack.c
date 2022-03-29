@@ -28,7 +28,7 @@ void pop()
 	{
 		element=stack[top];
 		top=top-1;
-		printf("Popped element is : %d",element);
+		printf("Popped element is : %d\n",element);
 		
 	}
 }
@@ -37,16 +37,16 @@ void display()
 {
 	if(top==-1)
 	{
-		printf("The stack is empty");
+		printf("The stack is empty\n");
 	}
 	else
 	{
 
 		int i;
-		printf("The stack is : ");
+		printf("The stack is :\n");
 		for (i=top;i>=0;i--)
 		{
-			printf("%d",stack[i]);
+			printf("%d\n",stack[i]);
 		}
     }
 }
@@ -70,9 +70,10 @@ int main()
 				}
 			break;
 			case 2:
-				
+				pop();
 			break;
 			case 3:
+				display();
 			break;
 			default:
 				printf("Invalid oparation\n");
@@ -81,77 +82,3 @@ int main()
 		scanf("%d",&loop);	
 	}while (loop!=0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
