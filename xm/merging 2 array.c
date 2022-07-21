@@ -10,10 +10,12 @@ int main()
 	int i =0;
 	
 	merge(a1,5,a2,7,r);
+	
 	for (i =0 ; i<12 ; i++)
 	{
 		printf("r[%d] = %d\n",i, r[i]);
 	}
+	return 0;
 }
 
 void merge(int a[], int m, int b[], int n, int r[])
@@ -40,9 +42,11 @@ void merge(int a[], int m, int b[], int n, int r[])
 			i++;
 		}
 		while (j < n)
+		{
 		r[k] = b[j];
 		k++;
 		j++;
+		}
 	}
 }
 
