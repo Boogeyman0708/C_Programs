@@ -17,7 +17,7 @@ int main()
 	arr = (int*)calloc(n,sizeof(int));
 	
 	printf("\nEnter the elements one by one\n");
-	for(i=0;i<=n;i++)
+	for(i=0;i<n;i++)
 	{
 		scanf("%d\n",(arr+i));
 	}
