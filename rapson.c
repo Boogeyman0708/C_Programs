@@ -3,11 +3,11 @@
 #include<math.h>
 float f(float x)
 {
-	return(x*sin(x)+cos(x));
+	return((x*x)-(4*x)-10);
 }
 float fd(float x)
 {
-	return(x*cos(x));
+	return(2*x-4);
 }
 int main()
 {
@@ -27,12 +27,9 @@ int main()
 			hn=((f(x0)/fd(x0))*(-1));
 			x1=x0+hn;
 			printf("\n%d\t %f\t %f\t %f\t %f",i,f(x0),fd(x0),hn,x1);
-			if(f(x0)==0)
-			{
-				return(0);
-			}
 		}
 		x0=x1;
 	}
 	printf("\n\n\n The required root is: %.4f",x0);
+	return (0);
 }
