@@ -4,7 +4,7 @@
 
 float f(float x,float y)
 {
-	return(x+y);
+	return(x*x*x+y);
 }
 int main ()
 {
