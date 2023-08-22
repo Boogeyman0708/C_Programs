@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTD-8">
+	<meta name="viewport" content="width="device-width, initial-scale=1.0"">
+	<title>Nested table</title>
+	<style>
+	*{
+		 box-sizing: border-box;
+	}
+	body{
+		background-color:#b3b3ed;
+	}
+	.inside{
+		text-align:center;
+		background-color: #ffd9d9;
+		border-radius:3px;
+		padding:5px;
+		margin:50px auto;
+		}
+	#heading{
+		text-align:center;
+		color:blue;
+		font-size:25px;
+		padding-top:25px;
+		}
+	#int{
+		margin:10px;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="heading">
+		<h2>Bio data using Nested Table<h2>
+	</div>
+	<div>
+		<table border="1" align="center" class="inside">
+		<thead>
+			<tr colspan="3">
+				<th>Bio Data</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><table border="1" align="center" class="inside" id="int">
+					<thead>
+						<th>Name</th>
+						<th colspan="2">Rahit Kumar Makhal</th>
+					</thead>
+					<tbody>	
+						<tr>
+						<td>Mobile Number</td>
+						<td colspan="2">9123026691</td>
+						</tr>
+						<tr>
+						<td>Email Id</td>
+						<td colspan="2">rahitmakhal151@gmail.com</td>
+						</tr>
+						<tr>
+						<td>Gender</td>
+						<td colspan="2">Male</td>
+						</tr
+						<tr>
+						<td>DOB</td>
+						<td colspan="2">07/08/2002</td></tr>
+						<tr>
+						<td>Marital Status</td>
+						<td colspan="2">Unmared</td>
+						</tr>
+						<tr>
+						<td>Religion</td>
+						<td colspan="2">Hinduism</td>
+						</tr>
+						<tr>
+						<td rowspan="3">language Known</td>
+						<td colspan="2">English</td>
+						</tr>
+						<tr>
+						<td colspan="2">Bengali</td></tr>
+						<tr><td colspan="2">Hindi</td></tr>
+						<tr>
+						<td rowspan="4">Qualification</td>
+						<td >Year</td>
+						<td>Appearing For</td>
+						</tr>
+						<tr><td>2019</td>
+						<td> 10th Examination</td>
+						</tr>
+						<tr><td>2021</td>
+						<td>12th Examination</td>
+						</tr>
+						<tr><td>2021</td>
+						<td>Persuing Graduation from CU</td>
+						</tr>
+						<tr><td rowspan="5">Programming Lang. Known</td>
+						<td colspan="2">C</td>
+						</tr>
+						<tr><td colspan="2">C++</td></tr>
+						<tr><td colspan="2">HTML</td></tr>
+						<tr><td colspan="2">CSS</td></tr>
+						<tr><td colspan="2">PHP</td></tr>
+						<tr><td>Experience</td>
+						<td colspan="2">Fresher</td>
+						</tr>
+						<tr>
+						<td rowspan=5>Address</td>
+						<td colspan="2">Ashiti Main Road</td>
+						</tr>
+						<tr>
+						<td>Vill</td>
+						<td>Khanberia</td>
+						</tr>
+						<tr>
+						<td>PO</td>
+						<td>Ashuti</td>
+						</tr>
+						<tr>
+						<td>PS</td>
+						<td>Maheshtala</td>
+						</tr>
+						<tr>
+						<td>Kolkata</td>
+						<td>700141</td>
+						</tr>
+					</tbody>
+				</table>
+				</td>
+			</tr>
+		</tbody>
+		</table>
+	</div>
+</body>
+</html>
