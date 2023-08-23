@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hotel</title>
+</head>
+<body>
+	<h1>Hotel Booking</h1>
+	<form action="hotel.php" method="post" target="_blank">
+	<label>Name of the customer : </label>
+	<input type="text" placeholder="type your name" name="name"><br><br>
+	<label for="room">select your room type</label>
+	<select name="room">
+		<option value ="Luxury">Luxury Room: 3000/day </option>
+		<option value="Superior">Superior Room: 2500/day </option>
+		<option value="Classic">Classic Room: 2000/day </option>
+	</select><br><br>
+	<label>number of days you want to stay : </label>
+	<input type="number" placeholder="in days" name="stay"><br><br>
+	<input type="reset">
+	<input type="submit" value="submit">
+</form>
+</body>
