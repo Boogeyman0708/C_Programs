@@ -61,9 +61,10 @@ int main()
 		}
 	}
 	prim(n);
+	printf("Edge \tWeight\n");
 	for (int i=1;i<n;i++)
 	{
-		printf("%d->%d\n",parent[i],i);
+		printf("%d -> %d \t%d\n",parent[i],i,graph[i][parent[i]]);
 	}
 	return 0;
 }
