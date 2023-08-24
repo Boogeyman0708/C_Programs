@@ -40,7 +40,7 @@ void prim(int n)
 		{
 			if(graph[u][v] && !mstset[v] && graph[u][v] <key[v])
 			{
-				parent[v]-u;
+				parent[v]=u;
 				key[v]=graph[u][v];
 			}
 		}
@@ -61,17 +61,9 @@ int main()
 		}
 	}
 	prim(n);
-	for (int i=0;i<n;i++)
+	for (int i=1;i<n;i++)
 	{
-		printf("%d-%d\n",parent[i],i);
+		printf("%d->%d\n",parent[i],i);
 	}
 	return 0;
 }
-
-
-
-
-
-
-
-
