@@ -1,3 +1,8 @@
+import cv2
+
+
+
+
 n=int(input("Enter the nth term of the series: "))
 x=int(input("Enter the value of X: "))
 s=0
