@@ -1,22 +1,29 @@
 import cv2
- 
-# To read image from disk, we use
-# cv2.imread function, in below method,
-img = cv2.imread("geeksforgeeks.png", cv2.IMREAD_COLOR)
- 
-# Creating GUI window to display an image on screen
-# first Parameter is windows title (should be in string format)
-# Second Parameter is image array
-cv2.imshow("image", img)
- 
-# To hold the window on screen, we use cv2.waitKey method
-# Once it detected the close input, it will release the control
-# To the next line
-# First Parameter is for holding screen for specified milliseconds
-# It should be positive integer. If 0 pass an parameter, then it will
-# hold the screen until user close it.
-cv2.waitKey(0)
- 
-# It is for removing/deleting created GUI window from screen
-# and memory
-cv2.destroyAllWindows()
+
+def color_separation(image):
+    # Splitting the image into its RGB channels
+    b, g, r = cv2.split(image)
+    return r, g, b
+
+def convert_to_grayscale(image):
+    # Converting color image to grayscale
+    gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    return gray_image
+
+def display_images(*images):
+    for i, img in enumerate(images):
+        cv2.imshow(f"Image {i+1}", img)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
+# Load the color image
+color_image = cv2.imread('color_image.jpg')
+
+# Perform color separation
+r, g, b = color_separation(color_image)
+
+# Convert original color image to grayscale
+gray_image = convert_to_grayscale(color_image)
+
+# Display output images
+display_images(color_image, r, g, b, gray_image)
