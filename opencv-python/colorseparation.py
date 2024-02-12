@@ -18,4 +18,5 @@ cv2.waitKey(0)
 cv2.imshow('Without Red',red)
 cv2.waitKey(0)
 
+
 cv2.destroyAllWindows()
