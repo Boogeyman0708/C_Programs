@@ -9,7 +9,7 @@ img=cv2.resize(im,(520,440))
 img1= img.copy()
 img2= img.copy()
 
-cv2.randn(img2,(0,0,0),(50,50,50))
+cv2.randn(img2,(128,128,128),(128,128,128))
 
 img3= cv2.add(img2,img1)
 
