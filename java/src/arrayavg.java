@@ -10,7 +10,7 @@ class arrayavg {
         for (int i = 0; i < n; i++) {
             a[i] = SC.nextInt();
         }
-        int s = 0;
+        double s = 0;
         for (int i = 0; i < n; i++) {
             s = s + a[i];
         }
@@ -19,4 +19,8 @@ class arrayavg {
         avg = s / n;
         System.out.println("The average of the array is: " + avg);
     }
+
+}
+
+class array {
 }
