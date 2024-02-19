@@ -15,13 +15,16 @@ union = s1.union(s2)
 intersection = s1.intersection(s2)
 difference = s1.difference(s2)
 
-print("Set1 is : ", end="\t")
-for i in s1:
-    print(i,end=" , ")
+print("Set1 is: \t",s1)
+print("Set2 is: \t",s2)
 
-print("\nSet2 is : ", end="\t")
-for i in s2:
-    print(i,end=" , ")
+# print("Set1 is : ", end="\t")
+# for i in s1:
+#     print(i,end=" , ")
+
+# print("\nSet2 is : ", end="\t")
+# for i in s2:
+#     print(i,end=" , ")
 
 print("\n\nThe Union of the above set is: ",union)
 print("\n\nThe Intersection of the above set is: ",intersection)
