@@ -1,3 +1,4 @@
+import sys
 import math
 
 def area(x):
@@ -9,7 +10,7 @@ def perimeter(x):
     return (peri)
 
 r=float(input("Enter the radius of the circle: "))
-
+#r=float(sys.argv[1])
 circle_area = area(r)
 circle_peri = perimeter(r)
 
